@@ -4,130 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+    <title> News homepage</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Frontend Mentor | News homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="copy.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
     </style>
-
-
 </head>
 
 <body>
 
     <div class="main-content">
-        <div class="section1">
-            <div class="front-row"> <img src="./images/logo.svg" alt="logo"></div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-            <div>
-                <ul class="navbar">
-                    <li class="li">Home </li>
-                    <li class="li">New</li>
-                    <li class="li">Popular</li>
-                    <li class="li">Trending</li>
-                    <li class="li">Categories</li>
-
-                </ul>
+        <div class="row flex-column flex-md-row section2">
+            <div class="col">
+                <img class="img-fluid sec2-image1" src="./images/image-web-3-desktop.jpg" alt="section-image">
             </div>
-        </div> <br>
-        <div class="section2">
-            <div class="section2-d1">
-                <div>
-                    <img class="sec2-image1" src="./images/image-web-3-desktop.jpg" alt="section-image"> <br>
+
+            <div class="col sec2-center flex-column">
+                <div class="cen-d1 text-center text-md-start">
+                    The Bright <br>
+                    Future of <br>
+                    Web 3.0?
                 </div>
-
-
-                <div class="sec2-center">
-                    <div class="cen-d1">
-                        The Bright <br>
-                        Future of <br>
-                        Web 3.0? <br>
+                <div class="section2-d2 d-flex flex-column">
+                    <div class="cen-d2">
+                        We dive into the next evolution of the web that claims to put the power of the platforms back
+                        into the hands of the people. But is it really fulfilling its promise?
                     </div>
-                    <div class="section2-d2">
-                        <div class="cen-d2">
-                            We dive into the next evolution of the web that claims to put the power of the platforms
-                            back
-                            into
-                            the hands of the people.
-                            But is it really fulfilling its promise?
-                        </div>
-                        <button class="btn">READ MORE</button>
-                    </div>
-
+                    <button class="btn">READ MORE</button>
                 </div>
             </div>
 
             <div class="aside">
-                <h2 class="aside-main"> New </h2> <br>
-
-                <div class="queston"> Hydrogen VS Electric Cars </div>
-                <p class="para"> Will hydrogen-fueled cars ever catch up to EVs? </p> <br> <br>
-
-                <div class="queston">The Downsides of AI Artistry </div>
-                <p class="para"> are the possible adverse effects of on-demand AI image generation?</p> <br> <br>
-
+                <h2 class="aside-main">New</h2>
+                <div class="queston">Hydrogen VS Electric Cars</div>
+                <p class="para">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <div class="queston">The Downsides of AI Artistry</div>
+                <p class="para">Are the possible adverse effects of on-demand AI image generation?</p>
                 <div class="queston">Is VC Funding Drying Up?</div>
-                <p class="para"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                <p class="para">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
             </div>
         </div>
 
-        <div class="section3">
-
-            <div class="section3-div1">
-                <div class="section3-d1-d1">
-                    <img class="sec3-image-1" src="./images/image-retro-pcs.jpg" alt="">
-                </div>
+        <div class="row flex-column flex-md-row section3">
+            <div class="col d-flex flex-column align-items-center align-items-md-start section3-div1">
+                <img class="sec3-image-1" src="./images/image-retro-pcs.jpg" alt="">
                 <div class="sec3-d1-d2">
-                    <h2> 01 </h2><br>
-                    <b> Reviving Retro PCs </b> <br>
-                    What happens when old PCs <br>
-                    are given modern upgrades?
+                    <h2>01</h2>
+                    <b>Reviving Retro PCs</b><br>
+                    What happens when old PCs <br>are given modern upgrades?
                 </div>
             </div>
 
-            <div class="section3-div1">
-                <div class="section3-d2-d1">
-                    <img class="sec3-image-1" src="./images/image-top-laptops.jpg" alt="">
-                </div>
+            <div class="col d-flex flex-column align-items-center align-items-md-start section3-div1">
+                <img class="sec3-image-1" src="./images/image-top-laptops.jpg" alt="">
                 <div class="sec3-d1-d2">
-
-                    <h2> 02 </h2><br>
-                    <b> Top 10 Laptops of 2022 </b> <br>
-                    Our best picks for various <br>
-                    needs and budgets.
+                    <h2>02</h2>
+                    <b>Top 10 Laptops of 2022</b><br>
+                    Our best picks for various <br>needs and budgets.
                 </div>
             </div>
 
-            <div class="section3-div1">
-                <div class="section3-d3-d1">
-                    <img class="sec3-image-1" src="./images/image-gaming-growth.jpg" alt="">
-                </div>
+            <div class="col d-flex flex-column align-items-center align-items-md-start section3-div1">
+                <img class="sec3-image-1" src="./images/image-gaming-growth.jpg" alt="">
                 <div class="sec3-d1-d2">
-
-                    <h2> 03 </h2> <br>
-                    <b> The Growth of Gaming </b> <br>
-                    How the pandemic has spar <br>
-                    ked fresh opportunities.
+                    <h2>03</h2>
+                    <b>The Growth of Gaming</b><br>
+                    How the pandemic has sparked <br>fresh opportunities.
                 </div>
             </div>
-
         </div>
     </div>
-    <script src="main.js"> </script>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
--->

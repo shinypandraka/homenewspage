@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+    .main-content {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .section1 {
+        flex-direction: column !important;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column !important;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section2 {
+        flex-direction: column !important;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .sec2-image1 {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .sec2-center {
+        flex-direction: column !important;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .aside {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 20px;
+    }
+
+    .section3 {
+        flex-direction: column !important;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .section3-div1 {
+        flex-direction: column !important;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .sec3-image-1 {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .sec3-d1-d2 {
+        font-size: 14px;
+    }
+}
